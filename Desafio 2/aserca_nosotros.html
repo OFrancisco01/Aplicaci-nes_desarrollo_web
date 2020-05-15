@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aserca_nosotros</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Nuestro css-->
+    <link rel="stylesheet" href="css/aserca_nosotros.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <style>
+        .map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+    <title>OpenLayers example</title>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="aserca_nosotros.html">Aserca Nosotros</a></li>
+        </ul>
+    </div>
+    <br>
+    
+    <div class="container">
+        <div class="row">
+
+            <div id="presentacion" class="col-4">
+                <h2>Quiénes Somos?</h2>
+                <p>
+                    Somos un grupo de músicos que disfrutamos la música y deseamos compartir nuestros conocimientos
+                    con la mayor cantidad de personas, creamos el sitio para ofrecer cursos gratuitos en dónde se enseña
+                    las bases para comenzar este camino dentro la música.
+                    <br>
+                    Nos enfocamos mayoritariamente en la guitarra clásica, las clases poseen temáticas como: saber la
+                    postura de la guitarra, saber el nombre de las cuerdas, afinación entre otras.
+                </p>
+            </div>
+
+
+            <div id="mapaLocation" class="col-8">
+                <div id="map" class="map"></div>
+                <script type="text/javascript">
+                    var map = new ol.Map({
+                        target: 'map',
+                        layers: [
+                            new ol.layer.Tile({
+                                source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([12.492442,41.890170 ]),
+                            zoom: 4
+                        })
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>

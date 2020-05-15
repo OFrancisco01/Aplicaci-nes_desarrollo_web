@@ -1,0 +1,128 @@
+body{
+  background-image: url(../imagenes/fondo_musica.jpg);
+  background-size: cover;
+  padding: 50px;
+  }
+  #menu{
+    background-color:#454445;
+  }
+  
+  #menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #menu ul li{
+    display: inline-block;
+  }
+  
+  #menu ul li a{
+    color: white;
+    display: block;
+    padding: 20px  20px;
+    text-decoration: none;
+  }
+  
+  #menu ul li a:hover{
+    background-color: rgb(36, 36, 32);
+  }
+  
+  /***************************/
+  #header{
+    /*Color fondo*/
+    background:orange;
+     /*Color de la fuente*/
+    color:#ffffff;
+    /*margen interior de 10px*/
+    padding-bottom: 10px;
+    /*margen exterior de 15px*/
+    margin-bottom: 15px;
+  }
+
+  /*****************************/
+  .services-section{
+    background: url(bg.jpg);
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: skyblue;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  .services-container{
+    background-color:grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 170px;
+    height: 200px;
+    border: 5px solid #8EBD50;
+    color: #82ccdd;
+   /* transform: rotate(45deg);*/
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    /*transform: rotate(-45deg);*/
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #82ccdd;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
+  }
+
+.imagen_responsive{
+  width: 160px;
+  height: 190px;
+}

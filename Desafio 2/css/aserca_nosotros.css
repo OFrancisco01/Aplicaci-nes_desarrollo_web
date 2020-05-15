@@ -1,0 +1,190 @@
+
+body{
+   background-image: url(../imagenes/fondo_musica.jpg);
+   background-size: cover;
+   padding: 50px;
+ /*   font-family: Arial;
+  */
+ }
+  #menu{
+    background-color:#454445;
+  }
+  
+  #menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #menu ul li{
+    display: inline-block;
+  }
+  
+  #menu ul li a{
+    color: white;
+    display: block;
+    padding: 20px  20px;
+    text-decoration: none;
+  }
+  
+  #menu ul li a:hover{
+    background-color: rgb(36, 36, 32);
+  }
+  #presentacion{
+    padding: 55px;
+  }
+  #presentacion h2{
+    color: rgb(92, 165, 224);
+  }
+
+  #presentacion p{
+    color: black;
+  }
+  
+  #categorias{
+    width: 900px;
+    height: auto; overflow: hidden;
+      border: 0px solid;
+      /*Bajar hacia abajo*/
+    margin-top: 150px;
+  }
+
+  /*
+  .uno{
+    width: 280px;
+    height: auto; overflow: hidden;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    text-align: center;
+      color: #4682b4;
+      margin-left: 60px;
+  }
+  
+  .parrafo{
+    color: #707070;
+    text-align: justify;
+  }
+  .dos{
+    
+    width: 280px;
+    height: auto; overflow: hidden;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    text-align: center;
+      color: #4682b4;
+      margin-left: 60px;
+  }
+
+  .tres{
+    width: 280px;
+    height: auto; overflow: hidden;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    text-align: center;
+      color: #4682b4;
+      margin-left: 60px;
+  }
+
+  .cuatro{
+    width: 280px;
+    height: auto; overflow: hidden;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    text-align: center;
+      color: #4682b4;
+      margin-left: 60px;
+  }*/
+
+  .services-section{
+    background: url(bg.jpg);
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: rgb(92, 165, 224);
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  .services-container{
+    background-color:grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #82ccdd;
+    color: #82ccdd;
+   /* transform: rotate(45deg);*/
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    /*transform: rotate(-45deg);*/
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #82ccdd;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
+  }
+
+.imagen_responsive{
+  width: 90px;
+  height: 90px;
+}
+
+
+
+  
